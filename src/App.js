@@ -1,16 +1,19 @@
-import {Header,Footer} from 'src/components'
-import 'src/assets/design/style.css'
-import 'src/assets/design/tailwind.css'
+import {Header,Footer,NavBar,About,Contact,Banner,Services,Work} from 'src/components'
 
 function App() {
   return (
-    <>
-    <Header className=""/>
-    <div className="min-h-[--body-height] bg-[#7e6464] app-container">
-        body
+    <div className='bg-site bg-no-repeat bg-cover overflow-hidden'>
+      <Header className=""/>
+      <NavBar/>
+      <div className="min-h-[--body-height]  app-container">
+          <Banner/>
+          <About/>
+          <Services/>
+          <Work/>
+          <Contact/>
+      </div>
+      <Footer className=""/>
     </div>
-    <Footer className=""/>
-    </>
   );
 }
 
