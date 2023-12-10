@@ -7,6 +7,23 @@
   src: url(../fonts/Simplemade/SimplemadeFontDEMO-DEMO.ttf) format('truetype'),
   url(../fonts/Simplemade/SimplemadeFontDEMO-DEMO.otf) format('otf');
 }
+@font-face {
+  font-family: 'Rajdhani';
+  src: url(../fonts/Rajdhani/Rajdhani-Light.ttf) format('truetype'),
+    url(../fonts/Rajdhani/Rajdhani-Regular.ttf) format('truetype'),
+    url(../fonts/Rajdhani/Rajdhani-Medium.ttf) format('truetype'),
+    url(../fonts/Rajdhani/Rajdhani-SemiBold.ttf) format('truetype'),
+    url(../fonts/Rajdhani/Rajdhani-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url(../fonts/Orbitron/Orbitron-VariableFont_wght.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Aldrich';
+  src: url(../fonts/Aldrich/Aldrich-Regular.ttf) format('truetype');
+}
 
 body {
   margin: 0;
@@ -18,19 +35,19 @@ body {
   line-height: 1.75rem/* 28px */;
   color:white;
 
-
   --header-height:70px;
   --footer-height:70px;
   --body-height: calc(100vh - var(--header-height) - var(--footer-height));
-  
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-
+.card-container{
+  
+}
 
 @tailwind base;
 @tailwind components;
@@ -45,20 +62,23 @@ code {
     }
 }
 @layer base {
+  .h1 {
+    @apply font-bold  text-[65px] mb-6 font-primary  tracking-[10%] uppercase;
+  }
   .h2 {
-    @apply  text-[32px] mb-6 tracking-[10%] uppercase;
+    @apply font-bold  text-[32px] mb-6 font-primary  tracking-[10%] uppercase;
   }
   .h3 {
-    @apply font-semibold text-[26px] mb-6 leading-[46px];
+    @apply font-bold  font-semibold text-[26px] font-primary  mb-6 leading-[46px];
   }
   .btn {
-    @apply rounded-full font-primary text-white font-medium;
+    @apply rounded-full  font-medium font-primary grid place-self-center cursor-pointer;
   }
   .btn-sm {
-    @apply h-[48px] px-6 text-sm;
+    @apply py-2 px-6 text-sm;
   }
   .btn-lg {
-    @apply h-[56px] px-10 text-base;
+    @apply py-4 px-10 text-base;
   }
   .btn-link {
     @apply text-base;
@@ -66,9 +86,23 @@ code {
   .text-gradient {
     @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold font-primary hover:from-[#FF56F6] hover:to-[#42A6E3];
   }
-  .section {
-    @apply py-8 lg:py-24 lg:h-screen flex items-center;
+  .text-gradient-1 {
+    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#9a84ae] to-[#5999bf] font-bold font-primary hover:from-[#FF56F6] hover:to-[#42A6E3];
   }
+  .bg-gradient{
+    @apply bg-gradient-to-r   from-[#42A6E3] to-[#FF56F6] font-bold font-primary hover:from-[#FF56F6] hover:to-[#42A6E3];
+  }
+  .section {
+    @apply py-8 lg:py-12 lg:h-screen min-h-screen grid place-items-center ;
+  }
+  .card-container{
+  @apply 
+    grid 
+    grid-cols-[repeat(auto-fill,minmax(250px,_1fr))]
+    md:grid-cols-[repeat(auto-fill,minmax(300px,_1fr))] 
+    lg:grid-cols-[repeat(auto-fill,minmax(400px,_1fr))] ;
+  }
+  
 }
 
 

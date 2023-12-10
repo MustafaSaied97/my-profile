@@ -8,6 +8,8 @@ module.exports = {
       primary: 'Orbitron',
       secondary: 'Rajdhani',
       tertiary: 'Aldrich',
+      Quaternary:'SouthernAire',
+      quinary:'Simplemade',
     },
     container: {
       padding: {
@@ -24,6 +26,7 @@ module.exports = {
       colors: {
         primary: '#0a0a0a',
         accent: '#B809C3',
+        secondary:'#3a7eb9',
       },
       backgroundImage: {
         site: "url('src/assets/images/site-bg.jpg')",
