@@ -13,7 +13,7 @@ function App() {
           <Work/>
           <Contact/>
       </div>
-      {/* <Footer className=""/> */}
+      <Footer className=""/>
     </div>
   );
 }

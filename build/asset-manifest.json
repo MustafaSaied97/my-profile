@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/MustafaSaied97/my-profile/static/css/main.62541921.css",
+    "main.js": "/MustafaSaied97/my-profile/static/js/main.f449bc6f.js",
+    "static/media/portfolio-img-2.png": "/MustafaSaied97/my-profile/static/media/portfolio-img-2.d80e3fc7e2231cffbbd7.png",
+    "static/media/portfolio-img-3.png": "/MustafaSaied97/my-profile/static/media/portfolio-img-3.e2bf250541b961cca642.png",
+    "static/media/site-bg.jpg": "/MustafaSaied97/my-profile/static/media/site-bg.54724d703024833ef9c6.jpg",
+    "static/media/portfolio-img-1.png": "/MustafaSaied97/my-profile/static/media/portfolio-img-1.65b23e5c313b18600f24.png",
+    "static/media/Rajdhani-Bold.ttf": "/MustafaSaied97/my-profile/static/media/Rajdhani-Bold.a5a831c1b8c8eb1b83ff.ttf",
+    "static/media/Rajdhani-SemiBold.ttf": "/MustafaSaied97/my-profile/static/media/Rajdhani-SemiBold.7d928c2670caba5b9dd6.ttf",
+    "static/media/Rajdhani-Medium.ttf": "/MustafaSaied97/my-profile/static/media/Rajdhani-Medium.69a9f7bccb45c01931a2.ttf",
+    "static/media/Rajdhani-Light.ttf": "/MustafaSaied97/my-profile/static/media/Rajdhani-Light.7f948ddb3029f1193092.ttf",
+    "static/media/Rajdhani-Regular.ttf": "/MustafaSaied97/my-profile/static/media/Rajdhani-Regular.148606c1eb703f6e597a.ttf",
+    "static/media/services.png": "/MustafaSaied97/my-profile/static/media/services.8e66d4fbbd95de45b8db.png",
+    "static/media/SouthernAire_Personal_Use_Only.ttf": "/MustafaSaied97/my-profile/static/media/SouthernAire_Personal_Use_Only.512a15a39d997d908144.ttf",
+    "static/media/Aldrich-Regular.ttf": "/MustafaSaied97/my-profile/static/media/Aldrich-Regular.75395156257a5c948148.ttf",
+    "static/media/Orbitron-VariableFont_wght.ttf": "/MustafaSaied97/my-profile/static/media/Orbitron-VariableFont_wght.7228a1c750b75b23bdb4.ttf",
+    "static/media/SimplemadeFontDEMO-DEMO.ttf": "/MustafaSaied97/my-profile/static/media/SimplemadeFontDEMO-DEMO.baaf251f1df95116314b.ttf",
+    "static/media/about.png": "/MustafaSaied97/my-profile/static/media/about.077aafdf9ec274471cb8.png",
+    "static/media/SimplemadeFontDEMO-DEMO.otf": "/MustafaSaied97/my-profile/static/media/SimplemadeFontDEMO-DEMO.8bcbb06204f8f76a03ed.otf",
+    "static/media/avatar.svg": "/MustafaSaied97/my-profile/static/media/avatar.2e971f08312b5c94a07c83b39faee8cf.svg",
+    "index.html": "/MustafaSaied97/my-profile/index.html",
+    "main.62541921.css.map": "/MustafaSaied97/my-profile/static/css/main.62541921.css.map",
+    "main.f449bc6f.js.map": "/MustafaSaied97/my-profile/static/js/main.f449bc6f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.62541921.css",
+    "static/js/main.f449bc6f.js"
+  ]
+}
