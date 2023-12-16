@@ -29,7 +29,7 @@ export default function Work() {
       <section className='container mx-auto'>
           <div className='card-container gap-4'>
             {/* section title  */}
-            <motion.div  variants={fadeIn('right',0.3)} initial='hidden' whileInView={'show'} viewport={{once:false,amount:0.3}} 
+            <motion.div  variants={fadeIn('right',0.3)} initial='hidden' whileInView={'show'} viewport={{once:true,amount:0.3}} 
             className='w-full'>
               <h2 className='h2   leading-tight text-secondary'>
                 My latest <br /> work
@@ -40,7 +40,7 @@ export default function Work() {
 
             {/* project card */}
             {projects.map((project,index)=>(
-            <motion.figure  variants={fadeIn('left',0.3)} initial='hidden' whileInView={'show'} viewport={{once:false,amount:0.3}} 
+            <motion.figure  variants={fadeIn('left',0.3)} initial='hidden' whileInView={'show'} viewport={{once:true,amount:0.3}} 
             key={index} className='group w-full  relative overflow-hidden border-2 border-white/50 rounded-xl' >
 
               <div className='group-hover:bg-black/70 w-full h-full absolute z-10 transition-all duration-500'></div>

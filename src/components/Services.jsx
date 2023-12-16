@@ -35,7 +35,7 @@ export default function Services() {
           variants={fadeIn('right',0.3)}
           initial='hidden'
           whileInView={'show'}
-          viewport={{once:false,amount:0.3}} 
+          viewport={{once:true,amount:0.3}} 
           className='flex-1 lg:bg-services lg:bg-bottom bg-no-repeat bg-contain mix-blend-lighten mb-12 lg:mb-0'> 
             <h2 className='h2 text-accent mb-6'> what I Do.</h2>
             <h3 className='h3 max-w-[455px] mb-16'> software developer with a specialization in frontend technologies.</h3>
@@ -45,7 +45,7 @@ export default function Services() {
           variants={fadeIn('left',0.3)}
           initial='hidden'
           whileInView={'show'}
-          viewport={{once:false,amount:0.3}} 
+          viewport={{once:true,amount:0.3}} 
           className='flex-1'>
             <ul>
               {services.map((service,index)=>(

@@ -14,7 +14,7 @@ export default function About() {
         variants={fadeIn('right',0.3)}
         initial='hidden'
         whileInView={'show'}
-        viewport={{once:false,amount:0.3}}
+        viewport={{once:true,amount:0.3}}
         className='flex-1 bg-about bg-contain bg-top bg-no-repeat h-[420px] opacity-60 mix-blend-lighten m-0'>
         </motion.figure>
 
@@ -22,7 +22,7 @@ export default function About() {
         variants={fadeIn('left',0.3)}
         initial='hidden'
         whileInView={'show'}
-        viewport={{once:false,amount:0.3}} 
+        viewport={{once:true,amount:0.3}} 
         className='flex-1'>
           <h2 className='h2 text-secondary'>About me.</h2>
           <h3 className='h3 mb-4'>

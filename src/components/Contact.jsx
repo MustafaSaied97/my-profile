@@ -1,12 +1,19 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { fadeIn } from 'src/utils/variants';
+import { useAlertContext } from 'src/context/alertContext';
+
 export default function Contact() {
+  const { onOpen } = useAlertContext();
+  function handleSubmit(e){
+    e.preventDefault()
+    onOpen({type:'success',message:'Thank you for interacting'})
+  }
   return (
     <section id='contact' className='section'>
       <section className='container mx-auto'>
         <div className='flex flex-col lg:flex-row'>
-          <motion.div variants={fadeIn('right',0.3)} initial='hidden' whileInView={'show'} viewport={{once:false,amount:0.3}} 
+          <motion.div variants={fadeIn('right',0.3)} initial='hidden' whileInView={'show'} viewport={{once:true,amount:0.3}} 
           className='flex-1'>
             <div>
               <h4 className='text-xl uppercase text-accent font-medium mb-2 tracking-wide'>Get in touch</h4>
@@ -16,8 +23,8 @@ export default function Contact() {
             </div>
           </motion.div>
 
-          <motion.form variants={fadeIn('left',0.3)} initial='hidden' whileInView={'show'} viewport={{once:false,amount:0.3}} 
-          className='flex-1 flex flex-col  gap-6 font-secondary font-extrabold'>
+          <motion.form onSubmit={handleSubmit} variants={fadeIn('left',0.3)} initial='hidden' whileInView={'show'} viewport={{once:true,amount:0.3}} 
+          className='flex-1 flex flex-col  sm:gap-6 gap-3 font-secondary font-extrabold'>
             {/* name */}
             <div className='relative z-0 w-full mb-5 group'>
               <input
@@ -29,7 +36,7 @@ export default function Contact() {
                 required
               />
               <label
-                for='floating_name'
+                htmlFor='floating_name'
                 className=' peer-focus:font-extrabold absolute text-lg text-gray-500  duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'>
                 Name
               </label>
@@ -45,7 +52,7 @@ export default function Contact() {
                 required
               />
               <label
-                for='floating_email'
+                htmlFor='floating_email'
                 className='peer-focus:font-medium absolute text-lg text-gray-500  duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'>
                 Email address
               </label>
@@ -62,7 +69,7 @@ export default function Contact() {
                 required
               />
               <label
-                for='floating_message'
+                htmlFor='floating_message'
                 className='peer-focus:font-medium absolute text-lg text-gray-500  duration-300 transform -translate-y-6 scale-75 top-2 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus: peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'>
                 Your Message
               </label>

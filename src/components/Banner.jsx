@@ -4,7 +4,17 @@ import { FaGithub, FaYoutube, FaLinkedin } from 'react-icons/fa';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 import { fadeIn } from 'src/utils/variants';
+import { useAlertContext } from 'src/context/alertContext';
+
 export default function Banner() {
+  const { onOpen } = useAlertContext();
+  const mailto={
+    email:'mustafasaied749@gmail.com',
+    subject:'new message for connection',
+    body:'thank you for interesting you write your message for me',
+    format:()=>`mailto:${mailto.email}?subject=${mailto.subject}&body=${mailto.body}`
+  }
+
   const socialMedia = [
     {
       icon: <FaYoutube  className=' text-[#e65151]'/>,
@@ -55,7 +65,7 @@ export default function Banner() {
 
             <motion.div  variants={fadeIn('up',0.6)} initial='hidden' whileInView={'show'} viewport={{once:true,amount:0.7}} 
             className='mx-auto lg:mx-0  mt-8 flex items-center gap-6 max-w-max '>
-              <button className='btn btn-sm sm:btn-lg  bg-gradient'> contact me</button>
+              <a href={mailto.format()} className='btn btn-sm sm:btn-lg  bg-gradient'> contact me</a>
               <p className='text-gradient btn-link'>My Portfolio</p>
             </motion.div>
             {/* social media */}
@@ -69,9 +79,9 @@ export default function Banner() {
             </motion.ul>
           </figcaption>
 
-          <motion.img variants={fadeIn('down',0.3)} initial='hidden' whileInView={'show'}  
+          <motion.img variants={fadeIn('down',0.3)} viewport={{once:true,amount:0.7}}  initial='hidden' whileInView={'show'}  
           src={BannerImg} className='w-[500px] p-0 sm:self-start hidden lg:block' alt="" />
-
+  
         </figure>
 
       </section>
